@@ -1,0 +1,115 @@
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ *
+ * sass --watch style.scss:style.min.css --style compressed
+ *
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+/**
+ * Setup
+ */
+@charset "UTF-8";
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+/**
+ * Any variables you find set in inuit.css’ `_vars.scss` that you do not wish to
+ * keep, simply redefine here. This means that if inuit.css, for example, sets
+ * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+ * that variable in this file. inuit.css ignores its own variables in favour of
+ * using your own, so you can completely modify how inuit.css works without ever
+ * having to alter the framework itself.
+ */
+/*------------------------------------*\
+    $OBJECTS-AND-ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * All of inuit.css’ objects and abstractions are initially turned off by
+ * default. This means that you start any project with as little as possible,
+ * and introducing objects and abstractions is as simple as switching the
+ * following variables to `true`.
+ */
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/**
+ * Place any variables that should override inuit.css’ defaults here.
+ */
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Place any of your own variables that sit on top of inuit.css here.
+ */
+/**
+ * She’s all yours, cap’n... Begin importing your stuff here.
+ */
+@import "inuit.css/inuit";
+/** 
+@import "ui/blog";
+@import "ui/form";
+@import "ui/figure";
+@import "ui/quillmodules";
+@import "ui/quillsociallinks";
+@import "ui/nav";
+*/
+/* @import "ui/styles"; */
+body {
+  /* set background of whole page to Matisse Blue */
+  background: #1a62a3;
+  /* font - set spacing between lines */
+  line-height: 1;
+  /**
+ * These demo styles sit on top of inuit.css
+ * github.com/csswizardry/inuit.css/blob/master/inuit.css/objects/_grids.scss
+ */
+}
+html {
+  font: 1em/1.5 Georgia, serif;
+  padding: 5%;
+  /* background-color:#ffffff; */
+  color: #333;
+}
+.demo-block {
+  padding: 0.5em;
+  /*  background-color:#4a8ec2; */
+  background-color: #666;
+  /* color:#666; */
+  color: #000;
+  border-radius: 4px;
+}
+.demo-block-red-white {
+  padding: 0.5em;
+  /*  background-color:#4a8ec2; */
+  background-color: #fff;
+  /* color:#666; */
+  color: #f00;
+  border-radius: 4px;
+}
+.demo-block-red-white li {
+  background-color: #fff;
+  color: #f00;
+  border: 0;
+  padding: 0.1em;
+  margin: 0;
+  list-style: none;
+  float: right;
+}
+.demo-block-grey-white {
+  padding: 0.5em;
+  /*  background-color:#4a8ec2; */
+  background-color: #fff;
+  color: #666;
+  border-radius: 4px;
+}
+.foo a {
+  background-color: #4a8ec2;
+  color: #fff;
+  border-left: 1px solid #fff;
+}
+.foo li:first-child a {
+  border-left: none;
+}

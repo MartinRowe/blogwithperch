@@ -1,0 +1,61 @@
+body {
+  /* Matisse Blue #1A62A3 */
+  /* background: #666; */
+  /* set background of whole page to grey */
+  background: #ffffff;
+  /* set background of whole page to White */
+  /* background: #1A62A3; */
+  /* set background of whole page to Matisse Blue */
+  line-height: 1;
+  /* font - set spacing between lines */ }
+
+/**
+ * These demo styles sit on top of inuit.css
+ * github.com/csswizardry/inuit.css/blob/master/inuit.css/objects/_grids.scss
+ */
+html {
+  font: 1em/1.5 Georgia, serif;
+  padding: 5%;
+  /* background-color:#ffffff; */
+  color: #567; }
+
+.demo-block {
+  padding: 0.5em;
+  /*  background-color:#4a8ec2; */
+  background-color: #666;
+  /* color:#666; */
+  color: #000;
+  border-radius: 4px; }
+
+.demo-block-red-white {
+  padding: 0.5em;
+  /*  background-color:#4a8ec2; */
+  background-color: #fff;
+  /* color:#666; */
+  color: #ff0000;
+  border-radius: 4px; }
+
+.demo-block-red-white li {
+  /* padding:0.5em; */
+  background-color: #fff;
+  color: #ff0000;
+  border: 0;
+  padding: 0.1em;
+  margin: 0;
+  list-style: none;
+  float: right; }
+
+.demo-block-grey-white {
+  padding: 0.5em;
+  /*  background-color:#4a8ec2; */
+  background-color: #fff;
+  color: #666;
+  border-radius: 4px; }
+
+.foo a {
+  background-color: #4a8ec2;
+  color: #fff;
+  border-left: 1px solid #fff; }
+
+.foo li:first-child a {
+  border-left: none; }

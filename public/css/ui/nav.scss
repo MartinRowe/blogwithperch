@@ -1,0 +1,45 @@
+/* *** My Nav Properties *** */
+
+.nav nav--stacked li {
+    list-style-type: none;
+}
+
+ul .nav p li a:link{color:red;}
+
+ul .nav p li a href{
+    list-style-type: none;
+    color:red;
+}
+
+.nav nav--stacked li a href{
+    /* color: #555; */
+    color: blue;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: .8em 1.6em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+/*
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:link {
+    color:red;
+}
+a:focus {
+    outline: thin dotted;
+    color:red;
+}
+
+/*
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+.block-list__link{
+    list-style-type:none;
+    color:red;
+}
