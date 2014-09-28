@@ -2,4 +2,5 @@
 <p>Home</p>
 <?php
 echo public_path() 
+echo phpinfo()
 ?>
