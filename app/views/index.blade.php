@@ -1,15 +1,20 @@
+<?php include(public_path().'/perch/runtime.php'); ?>
+
 @extends('layout')
 
 @section('content')
     <div class="page-header">
         <br />
         <br />
-        <!-- <h4>All Posts</h4> -->
+
+        <?php perch_content('Intro'); ?>
         <hr />
     </div>
 
  <!--<div class=demo-block-gray-white>   -->
      <a href="{{ action('PostsController@index') }}" >The Blog Posts</a>
+
+
 
     @if ($posts->isEmpty())
         <p>There are not any posts! :(</p>

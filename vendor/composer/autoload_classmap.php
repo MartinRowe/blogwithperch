@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AboutController' => $baseDir . '/app/controllers/AboutController.php',
-    'Addimagefield' => $baseDir . '/app/database/migrations/2014_09_26_081418_addimagefield.php',
     'Addimagefieldtoposts' => $baseDir . '/app/database/migrations/2014_09_26_081933_addimagefieldtoposts.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',

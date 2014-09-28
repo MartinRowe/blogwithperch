@@ -22,15 +22,15 @@ Route::get('/', 'HomeController@home');
 Route::model('post', 'Post');
 
 // Show blog pages.
-Route::get('/blog', 'PostsController@index');
-Route::get('/blog/create', 'PostsController@create');
-Route::get('/blog/edit/{post}', 'PostsController@edit');
-Route::get('/blog/delete/{post}', 'PostsController@delete');
+Route::get('/blogg', 'PostsController@index');
+Route::get('/blogg/create', 'PostsController@create');
+Route::get('/blogg/edit/{post}', 'PostsController@edit');
+Route::get('/blogg/delete/{post}', 'PostsController@delete');
 
 // Handle blog form submissions.
-Route::post('/blog/create', 'PostsController@handleCreate');
-Route::post('/blog/edit', 'PostsController@handleEdit');
-Route::post('/blog/delete', 'PostsController@handleDelete');
+Route::post('/blogg/create', 'PostsController@handleCreate');
+Route::post('/blogg/edit', 'PostsController@handleEdit');
+Route::post('/blogg/delete', 'PostsController@handleDelete');
 
 
 // Bind route parameters for FAQ page.

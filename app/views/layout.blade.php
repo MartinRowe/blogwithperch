@@ -10,11 +10,18 @@
 <body>
 <ul class="nav nav--fit">
    <li><a href="{{ URL::to('/'    ) }}" class="greybox">Home</a></li>
-   <li><a href="{{ URL::to('blog') }}" class="greybox">Blog</a></li>
+   <li><a href="{{ URL::to('blogg') }}" class="greybox">Blog</a></li>
    <li><a href="{{ URL::to('faq') }}" class="greybox">FAQ</a></li>
    <li><a href="{{ URL::to('about') }}" class="greybox">About</a></li>
 </ul>
 <br />
+<? php
+$path = app_path();
+echo $path;
+
+$http_host = getenv('HTTP_HOST');
+echo $http_host;
+?>
 <br />
 <br />
 
@@ -27,6 +34,13 @@
 --><div class="grid__item  six-twelfths">
       <!--   <p class=demo-block-red-white>Six Twelfths</p> -->
       <div class=demo-block-gray-white> 
+  <? php
+$path = app_path();
+echo $path;
+
+$http_host = getenv('HTTP_HOST');
+echo $http_host;
+?>
     {{ HTML::image('meSmile.jpg')}}
       </div>
       @yield('content')
