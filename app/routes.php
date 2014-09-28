@@ -22,7 +22,7 @@ Route::get('/', 'HomeController@home');
 Route::model('post', 'Post');
 
 // Show blog pages.
-Route::get('/blogg', 'PostsController@index');
+Route::get('/blogg', 'PostsController@mainindex');
 Route::get('/blogg/create', 'PostsController@create');
 Route::get('/blogg/edit/{post}', 'PostsController@edit');
 Route::get('/blogg/delete/{post}', 'PostsController@delete');

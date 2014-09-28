@@ -9,12 +9,12 @@ class PostsController extends Controller
         return View::make('home');
     }
     
-    public function index()
+    public function mainindex()
     {
         // Show a listing of posts.
         $posts = Post::all();
 
-        return View::make('index', compact('posts'));
+        return View::make('mainindex', compact('posts'));
     }
 
     public function create()
@@ -33,7 +33,7 @@ class PostsController extends Controller
         $post->complete     = Input::has('complete');
         $post->save();
 
-        return Redirect::action('PostsController@index');
+        return Redirect::action('PostsController@mainindex');
     }
 
     public function edit(Post $post)
@@ -54,7 +54,7 @@ class PostsController extends Controller
         $post->complete     = Input::has('complete');
         $post->save();
 
-        return Redirect::action('PostsController@index');
+        return Redirect::action('PostsController@mainindex');
     }
 
     public function delete(Post $post)
@@ -71,7 +71,7 @@ class PostsController extends Controller
         $post = Post::findOrFail($id);
         $post->delete();
         
-        return Redirect::action('PostsController@index');
+        return Redirect::action('PostsController@mainindex');
     }
 
     /**

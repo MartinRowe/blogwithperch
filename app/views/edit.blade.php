@@ -22,7 +22,7 @@
             </label>
         </div>
         <input type="submit" value="Save" class="btn btn-primary" />
-        <a href="{{ action('PostsController@index') }}" class="btn btn-link">Cancel</a>
+        <a href="{{ action('PostsController@mainindex') }}" class="btn btn-link">Cancel</a>
     </form>
     <ul class="form-fields">
    <li>

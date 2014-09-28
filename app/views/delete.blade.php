@@ -7,6 +7,6 @@
     <form action="{{ action('PostsController@handleDelete') }}" method="post" role="form">
         <input type="hidden" name="post" value="{{ $post->id }}" />
         <input type="submit" class="btn btn-danger" value="Yes" />
-        <a href="{{ action('PostsController@index') }}" class="btn btn-default">No!</a>
+        <a href="{{ action('PostsController@mainindex') }}" class="btn btn-default">No!</a>
     </form>
 @stop

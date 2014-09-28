@@ -46,7 +46,7 @@
 --><div class="grid__item  four-twelfths">
     <!--    <p class=demo-block-red-white>One Twelfth</p> -->
  <div class=demo-block-gray-white> 
-        <a href="{{ action('PostsController@index') }}" >Sidebar</a>
+        <a href="{{ action('PostsController@mainindex') }}" >Sidebar</a>
       </div>
       @yield('sidebarcontent')
     </div><!--
