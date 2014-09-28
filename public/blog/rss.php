@@ -1,4 +1,4 @@
-<?php include(public_path().'/perch/runtime.php'); ?>
+<?php include('../perch/runtime.php'); ?>
 
 <?php 
     $domain = 'http://'.$_SERVER['HTTP_HOST'];
