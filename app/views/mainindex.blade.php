@@ -1,4 +1,3 @@
-<?php include(public_path().'/perch/runtime.php'); ?>
 @extends('layout')
 
 @section('content')
@@ -6,7 +5,6 @@
         <br />
         <br />
 
-        <?php perch_content('Intro'); ?>
         <hr />
     </div>
 
