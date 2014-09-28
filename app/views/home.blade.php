@@ -1,5 +1,5 @@
 @extends('layout')
 <p>Home</p>
 <?php
-phpinfo();
+echo public_path()
 ?>
