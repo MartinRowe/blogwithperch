@@ -1,4 +1,4 @@
-<?php include('perch/runtime.php');?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/perch/runtime.php"); ?>
 <!doctype html>
 <html lang="en">
  <head>
