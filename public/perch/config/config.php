@@ -18,6 +18,7 @@
         define("PERCH_DB_PASSWORD", 'EAMLupFQ6az4yJAx02uo');
         define("PERCH_DB_SERVER", "178.62.54.19");
         define("PERCH_DB_DATABASE", "forge");
+        define("PERCH_DB_PREFIX", "perch2_");
         break; 
 
 
