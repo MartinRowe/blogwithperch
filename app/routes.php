@@ -27,6 +27,8 @@ Route::get('/blogg/create', 'PostsController@create');
 Route::get('/blogg/edit/{post}', 'PostsController@edit');
 Route::get('/blogg/delete/{post}', 'PostsController@delete');
 
+Route::get('/head', 'PostsController@head');
+
 // Handle blog form submissions.
 Route::post('/blogg/create', 'PostsController@handleCreate');
 Route::post('/blogg/edit', 'PostsController@handleEdit');

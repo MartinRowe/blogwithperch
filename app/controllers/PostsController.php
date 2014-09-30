@@ -85,4 +85,11 @@ class PostsController extends Controller
         return View::make('find', compact('post'));
         //return View::make('user.profile', ['user' => $user]);
     }
+
+    public function head()
+    {
+        // Show the create post form.
+        return View::make('head');
+        //return view('create'); //new for 5.0
+    }
 }

@@ -1,12 +1,7 @@
 @extends('layout')
 
 @section('content')
-<?php
 
-
-$http_host = getenv('HTTP_HOST');
-echo $http_host;
-?>
     <div class="page-header">
         <h1>Create Post <small>and some day complete it!</small></h1>
     </div>
