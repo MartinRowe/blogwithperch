@@ -1,4 +1,3 @@
-<?php include('perch/runtime.php');?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,7 +15,7 @@
    <li><a href="{{ URL::to('about') }}" class="greybox">About</a></li>
 </ul>
 <br />
-<?php perch_content('Intro'); ?>
+
 <br />
 <br />
 
