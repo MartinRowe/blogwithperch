@@ -1,3 +1,4 @@
+<?php include('perch/runtime.php'); ?>
 <!doctype html>
 <html lang="en">
  <head>
@@ -8,6 +9,8 @@
 
 </head>
 <body>
+  <h1><?php perch_content('Main heading'); ?></h1>
 
+    <?php perch_content('Intro'); ?>
 </body>
 </html>
