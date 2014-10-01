@@ -16,7 +16,7 @@
 // Bind route parameters for home page.
 Route::model('home', 'Home');
 Route::get('/', 'HomeController@home');
-
+Route::get('/blog', 'HomeController@blog');
 
 // Bind route parameters for blog page.
 Route::model('post', 'Post');

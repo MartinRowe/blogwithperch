@@ -1,4 +1,4 @@
-<?php include('../perch/runtime.php'); ?>
+<?php include('perch/runtime.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
