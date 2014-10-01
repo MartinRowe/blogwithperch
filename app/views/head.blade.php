@@ -1,4 +1,3 @@
-<?php include('perch/runtime.php');?>
 <!doctype html>
 <html lang="en">
  <head>
@@ -9,6 +8,6 @@
 
 </head>
 <body>
-<?php perch_content('Intro'); ?>
+
 </body>
 </html>

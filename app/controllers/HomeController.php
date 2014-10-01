@@ -12,12 +12,19 @@ class HomeController extends Controller
         //return view('create'); //new for 5.0
     }
 
-    public function blog()
+    public function example()
     {
         // Show the create post form.
         //return View::make('blog/index');
-        return View::make('blog/index'); //new for 5.0
+        return View::make('example'); //new for 5.0
     }
+    public function search()
+    {
+        // Show the create post form.
+        //return View::make('blog/index');
+        return View::make('search'); //new for 5.0
+    }
+
 
     
 }
