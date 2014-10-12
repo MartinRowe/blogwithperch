@@ -1,7 +1,7 @@
 <?php include('perch/runtime.php'); ?>
 @extends('perchviews/blog/blogGrid')
 <?php
-PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch/app/views/perchviews/blog/index.blade.php');
+PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch/app/views/perchviews/blog/blogindex.blade.php');
 ?>
 
 @section('blogRecentPosts')

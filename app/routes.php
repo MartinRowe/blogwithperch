@@ -25,8 +25,8 @@ Route::get('/listdetail', 'HomeController@listdetail');
 Route::model('blog', 'Blog');
 
 Route::get('/blog', 'BlogController@blogindex');
-Route::get('/archive', 'BlogController@archive');
-Route::get('/perchviews/blog/post', 'BlogController@post');
+Route::get('/blog/archive', 'BlogController@archive');
+Route::get('/blog/post', 'BlogController@post');
 
 
 // Laravel
