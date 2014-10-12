@@ -24,8 +24,8 @@ Route::get('/listdetail', 'HomeController@listdetail');
 // Bind Perch Blog route parameters for blog page.
 Route::model('blog', 'Blog');
 
-Route::get('/theblog', 'BlogController@index');
-Route::get('/theblog/archive', 'BlogController@archive');
+Route::get('/blog', 'BlogController@blogindex');
+Route::get('/archive', 'BlogController@archive');
 Route::get('/perchviews/blog/post', 'BlogController@post');
 
 
