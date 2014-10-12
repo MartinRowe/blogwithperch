@@ -13,15 +13,25 @@
 |
 */
 
-// Bind route parameters for home page.
+// Bind Home route parameters for home page.
 Route::model('home', 'Home');
 Route::get('/', 'HomeController@home');
 Route::get('/example', 'HomeController@example');
 Route::get('/search', 'HomeController@search');
+// Perch List Detail Example
+Route::get('/listdetail', 'HomeController@listdetail');
 
+// Bind Perch Blog route parameters for blog page.
+Route::model('blog', 'Blog');
+
+Route::get('/theblog', 'BlogController@index');
+Route::get('/theblog/archive', 'BlogController@archive');
+Route::get('/perchviews/blog/post', 'BlogController@post');
+
+
+// Laravel
 // Bind route parameters for blog page.
 Route::model('post', 'Post');
-
 // Show blog pages.
 Route::get('/blogg', 'PostsController@mainindex');
 Route::get('/blogg/create', 'PostsController@create');
@@ -43,4 +53,3 @@ Route::get('/faq', 'FAQController@faq');
 // Bind route parameters for about page.
 Route::model('about', 'About');
 Route::get('/about', 'AboutController@about');
-

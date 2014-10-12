@@ -1,0 +1,5 @@
+<a href="?s=<perch:content id="slug" type="slug" />">
+    <perch:if exists="is_prev">Previous<perch:else />Next</perch:if>:
+    <perch:content id="image" type="image" width="100" height="100" crop="true" output="tag" />
+    <perch:content id="title" type="text" />
+</a>

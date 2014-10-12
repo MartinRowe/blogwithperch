@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,6 +14,9 @@
    <li><a href="{{ URL::to('blogg') }}" class="greybox">Blogg</a></li>
    <li><a href="{{ URL::to('faq') }}" class="greybox">FAQ</a></li>
    <li><a href="{{ URL::to('about') }}" class="greybox">About</a></li>
+   <li><a href="{{ URL::to('search') }}" class="greybox">Search</a></li>
+   <li><a href="{{ URL::to('blog') }}" class="greybox">Blog</a></li>
+   <li><a href="{{ URL::to('listdetail') }}" class="greybox">ListDetail</a></li>
 </ul>
 <br />
 
@@ -25,20 +29,22 @@
     
  --><!--
 
---><div class="grid__item  six-twelfths">
+--><div class="grid__item  two-twelfths">
       <!--   <p class=demo-block-red-white>Six Twelfths</p> -->
       <div class=demo-block-gray-white> 
-  
-    {{ HTML::image('meSmile.jpg')}}
+
+
+        @yield('detailcontent')
+  <!--  {{ HTML::image('meSmile.jpg')}} -->
       </div>
-      @yield('content')
+  <!--    @yield('content') -->
     </div><!--
 
 --><!--
     
---><div class="grid__item  two-twelfths">
+--><div class="grid__item  six-twelfths">
 <!--        <p class=demo-block-red-white>Five Twelfths</p> -->
-  
+
     </div><!--
 
     --><!--
@@ -49,6 +55,9 @@
         <a href="{{ action('PostsController@mainindex') }}" >Sidebar</a>
       </div>
       @yield('sidebarcontent')
+       @yield('listcontent')
+
+        
     </div><!--
         
 -->  </div><!--

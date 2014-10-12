@@ -1,15 +1,7 @@
-<?php include('../perch/runtime.php'); ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Perch Blog Example Listing Page</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.php" />
-	<?php perch_get_css(); ?>
-	<link rel="stylesheet" href="blog.css" type="text/css" />
-</head>
-<body>
+<?php include('../../../public/perch/runtime.php'); ?>
+@extends('layout')
+@section('content')
+
 	<header class="layout-header">
 		<div class="wrapper">
 			<div class="company-name">Perch Blog App - Company Name</div>
@@ -27,7 +19,7 @@
 	<div class="wrapper cols2-nav-right">
 	
 		<div class="primary-content">
-		    <h1>Blog</h1>
+		    <h1>This is Blog - blade</h1>
 			<!-- this is an example blog homepage showing a simple call to perch_blog_recent_posts()
 			
 			Posts are displayed using the templates stored in perch/apps/perch_blog/templates/blog you can edit these as you wish, making sure that the 
@@ -36,8 +28,8 @@
 		    <?php 
 		        perch_blog_recent_posts(10);
 		    ?>
-		    
-		    <p><a href="archive.php">More posts</a></p>
+		       <a href="{{ action('HomeController@archive') }}" >More Posts</a>
+		  <!--  <p><a href="archive.php">More posts</a></p> -->
 		</div>
 		
 		<nav class="sidebar">
@@ -74,5 +66,4 @@
 		</div>
 	</footer>
 	<?php perch_get_javascript(); ?>
-</body>
-</html>
+	@stop

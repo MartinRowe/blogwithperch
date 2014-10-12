@@ -681,5 +681,6 @@
     "Page": "Page",
     "Order": "Order",
     "Local file": "Local file",
-    "Roll back regions": "Roll back regions"
+    "Roll back regions": "Roll back regions",
+    "Do not copy": "Do not copy"
 }

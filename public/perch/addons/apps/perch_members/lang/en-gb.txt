@@ -49,5 +49,6 @@
     "New password: ": "New password: ",
     "Send welcome email": "Send welcome email",
     "Will only be sent to active members": "Will only be sent to active members",
-    "Forms": "Forms"
+    "Forms": "Forms",
+    "Login page path": "Login page path"
 }

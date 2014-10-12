@@ -6,3 +6,7 @@ class Post extends Eloquent
 {
 
 }
+class Blog extends Eloquent
+{
+	
+}

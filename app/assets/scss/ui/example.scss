@@ -1,8 +1,8 @@
 body {
 	/* Matisse Blue #1A62A3; */
-    /* background: #666; */     /* set background of whole page to grey */ 
-     background: #ffffff;    /* set background of whole page to White */
-    /* background: #1A62A3; */  /* set background of whole page to Matisse Blue */
+  /*   background: #666;  */    /* set background of whole page to grey */ 
+     /* background: #ffff00;     set background of whole page to  */
+     background: #ffffff;   /* set background of whole page to white */
 
 	line-height: 1; /* font - set spacing between lines */
 }
@@ -15,14 +15,15 @@ html{
     font:1em/1.5 Georgia, serif;
     padding:5%;
    /* background-color:#ffffff; */
-    color:#567;
+    color:#567; 
+
 }
 .demo-block{
     padding:0.5em;
   /*  background-color:#4a8ec2; */
-  background-color:#666;
-   /* color:#666; */
-   color:#000;
+   background-color:#ffffff; 
+   color:#666;
+   /* color:#000; */
     border-radius:4px;
 }
 .demo-block-red-white{
@@ -46,7 +47,7 @@ html{
 .demo-block-grey-white{
     padding:0.5em;
   /*  background-color:#4a8ec2; */
-  background-color:#fff;
+  background-color:#fff000;
     color:#666;
     border-radius:4px;
 }

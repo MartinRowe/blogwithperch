@@ -2,7 +2,13 @@
 <h3>Archive by Date</h3>
 <ul>
 
-    <li><a href="archive.php?year="> ()</a>
+    <li><a href="archive.php?year=2014">2014 (4)</a>
     
+<ul>
+
+    <li><a href="archive.php?year=2014&amp;month=10">October (4)</a></li>
+
+</ul>
+
     </li>
 </ul>
