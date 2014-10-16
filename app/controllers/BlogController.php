@@ -1,7 +1,7 @@
 <?php
 
 // app/controllers/PostsController.php
-
+// Perch Blog Controller
 class BlogController extends Controller
 {
 
@@ -18,6 +18,7 @@ public function archive()
         //return View::make('blog/index');
         return View::make('perchviews/blog/archive'); //new for 5.0
     }
+
 
 public function post()
     {

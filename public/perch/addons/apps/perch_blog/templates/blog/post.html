@@ -12,7 +12,7 @@
             by <span class="p-author h-card"><perch:blog id="authorGivenName" type="hidden" /> <perch:blog id="authorFamilyName" type="hidden" /></span>
         </perch:if>    
         <perch:categories id="categories" set="blog" label="Categories" display-as="checkboxes">
-            <a href="archive.blade.php?cat=<perch:category id="catSlug" type="slug" />" class="p-category">
+            <a href="archive?cat=<perch:category id="catSlug" type="slug" />" class="p-category">
                 <perch:category id="catTitle" type="text" />
             </a>
         </perch:categories>

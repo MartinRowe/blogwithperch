@@ -5,11 +5,11 @@
     
  --><!--
 
---><div class="grid__item  two-twelfths">
+--><div class="grid__item  four-twelfths">
       <!--   <p class=demo-block-red-white>Six Twelfths</p> -->
       <div class=demo-block-gray-white> 
 
-
+ @yield('blogRecentPosts')
        
   <!--  {{ HTML::image('meSmile.jpg')}} -->
       </div>
@@ -18,7 +18,7 @@
 
 --><!--
     
---><div class="grid__item  six-twelfths">
+--><div class="grid__item  four-twelfths">
 <!--        <p class=demo-block-red-white>Five Twelfths</p> -->
  
     </div><!--
@@ -29,7 +29,7 @@
     <!--    <p class=demo-block-red-white>One Twelfth</p> -->
  <div class=demo-block> 
      <!--   <a href="{{ action('PostsController@mainindex') }}" >Sidebar</a> -->
- @yield('blogarchives')   
+   @yield('blogarchives') 
       </div>
 
         

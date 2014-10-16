@@ -29,6 +29,11 @@ PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch
 		            </div>
 		            <div class="tags">
 		                <?php perch_blog_post_tags(perch_get('s')); ?>
+
+		                		    <!--  By year -->
+		    <?php perch_blog_date_archive_years(); ?>
+		    <!--  By year and then month - can take parameters for two templates. The first displays the years and the second the months see the default templates for examples -->
+		    <?php perch_blog_date_archive_months(); ?>
 		            </div>
 		        </div>
 		    	
