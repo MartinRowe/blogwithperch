@@ -16,10 +16,10 @@
 // Bind Home route parameters for home page.
 Route::model('home', 'Home');
 Route::get('/', 'HomeController@home');
-Route::get('/example', 'HomeController@example');
-Route::get('/search', 'HomeController@search');
+//Route::get('/example', 'HomeController@example');
+//Route::get('/search', 'HomeController@search');
 // Perch List Detail Example
-Route::get('/listdetail', 'HomeController@listdetail');
+//Route::get('/listdetail', 'HomeController@listdetail');
 
 // Bind Perch Blog route parameters for blog page - what a hassle this has been.
 Route::model('blog', 'Blog');

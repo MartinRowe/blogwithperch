@@ -1,9 +1,10 @@
 <?php include('perch/runtime.php'); ?>
+@extends('perchviews/blog/archiveGrid')
 <?php
 PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch/app/views/perchviews/blog/archive.blade.php');
 ?>
 
-@extends('perchviews/blog/archiveGrid')
+
 
 @section('blogarchives')
 	
