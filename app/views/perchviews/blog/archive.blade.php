@@ -154,7 +154,8 @@ PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch
 		    <?php perch_blog_date_archive_months(); ?>
 
 		    <!--  Mr trying -->
-	
+		    <title><?php perch_blog_post_field(perch_get('s'), 'postTitle'); ?></title>
+
     	</nav>
 	</div>
 	
