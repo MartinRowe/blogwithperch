@@ -1,9 +1,8 @@
 <?php include('perch/runtime.php'); ?>
-@extends('perchviews/blog/postGrid')
 <?php
 PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch/app/views/perchviews/blog/post.blade.php');
 ?>
-
+@extends('perchviews/blog/postGrid')
 @section('postsection')
 	<header class="layout-header">
 		<div class="wrapper">
