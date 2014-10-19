@@ -19,7 +19,6 @@
     
 --><div class="grid__item  two-twelfths">
 <!--        <p class=demo-block-red-white>Five Twelfths</p> -->
-
     </div><!--
 
     --><!--

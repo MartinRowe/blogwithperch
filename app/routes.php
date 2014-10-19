@@ -28,6 +28,7 @@ Route::get('/archive', 'BlogController@archive');
 Route::get('/post', 'BlogController@post');
 
 
+
 // Laravel
 // Bind route parameters for blog page.
 Route::model('post', 'Post');

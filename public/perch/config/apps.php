@@ -6,4 +6,5 @@
 		'perch_members',
 		'perch_events',
 		'perch_gallery',
+		'perch_comments',
 	);

@@ -16,6 +16,11 @@ PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch
 		    <?php 
 		        perch_blog_recent_posts(10);
 		    ?>
+
+
+
+
+		    
 		    
 	 <a href="{{ action('BlogController@archive') }}" >More Posts</a>
 		  <!--  <p><a href="archive.php">More posts</a></p> -->

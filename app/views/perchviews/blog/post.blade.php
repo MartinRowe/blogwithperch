@@ -40,6 +40,18 @@ PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch
 		    	<?php perch_blog_post_comments(perch_get('s')); ?>
 		    	
 		    	<?php perch_blog_post_comment_form(perch_get('s')); ?>
+
+
+
+ <!-- my try at comments -->
+ 
+ <!-- trying comments
+
+  -->
+
+
+
+
 		        
 		    </div>
 		</div>
