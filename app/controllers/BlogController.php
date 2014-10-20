@@ -26,5 +26,13 @@ public function post()
         //return View::make('blog/index');
         return View::make('perchviews/blog/post'); //new for 5.0
     }
+
+public function blogComments(Blog $blog)
+    {
+        // Show the create post form.
+        //return View::make('blog/index');
+       // return View::make('perchviews/blog/blogComments'); //new for 5.0
+return View::make('perchviews/blog/post', compact('blog'));
+    }
     
 }

@@ -25,7 +25,9 @@ Route::get('/', 'HomeController@home');
 Route::model('blog', 'Blog');
 Route::get('/blog', 'BlogController@blogindex');
 Route::get('/archive', 'BlogController@archive');
-Route::get('/post', 'BlogController@post');
+Route::any('/post', 'BlogController@post');
+//Route::get('/comms', 'BlogController@blogComments');
+//Route::post('/post/{blog}', 'BlogController@blogComments');
 
 
 
