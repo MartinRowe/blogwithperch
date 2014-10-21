@@ -29,7 +29,7 @@
  <div class=demo-block-gray-white> 
      <!--   <a href="{{ action('PostsController@mainindex') }}" >Sidebar</a> -->
       </div>
- @yield('homeContent')
+ @yield('searchSection')
  
         
     </div><!--

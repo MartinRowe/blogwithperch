@@ -1,12 +1,10 @@
 <?php include('perch/runtime.php'); ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-	<title>Perch Example Search Page</title>
-	<?php perch_get_css(); ?>
-</head>
-<body>
+@extends('searchGrid')
+<?php
+PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch/app/views/search.blade.php');
+?>
+
+@section('searchSection')
 	<div class="wrapper cols2-nav-right">
 		<div class="primary-content">
 		    <?php 
@@ -19,5 +17,4 @@
     	</nav>
 	</div>
     <?php perch_get_javascript(); ?>
-</body>
-</html>
+@stop

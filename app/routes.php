@@ -17,7 +17,7 @@
 Route::model('home', 'Home');
 Route::get('/', 'HomeController@home');
 //Route::get('/example', 'HomeController@example');
-//Route::get('/search', 'HomeController@search');
+Route::get('/search', 'HomeController@search');
 // Perch List Detail Example
 //Route::get('/listdetail', 'HomeController@listdetail');
 
@@ -26,12 +26,9 @@ Route::model('blog', 'Blog');
 Route::get('/blog', 'BlogController@blogindex');
 Route::get('/archive', 'BlogController@archive');
 Route::any('/post', 'BlogController@post');
-//Route::get('/comms', 'BlogController@blogComments');
-//Route::post('/post/{blog}', 'BlogController@blogComments');
 
 
-
-// Laravel
+// Non Perch, only Laravel
 // Bind route parameters for blog page.
 Route::model('post', 'Post');
 // Show blog pages.
