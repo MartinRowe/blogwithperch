@@ -1,0 +1,21 @@
+<perch:before>
+<ul class="hfeed listing"></perch:before>
+    <li class="hentry">
+        <h3><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="postTitle" /></a></h3>
+        <p class="entry-published date"><perch:blog id="postDateTime" format="%d %B %Y" /></p>
+
+    </li>
+<perch:after>
+    </ul>
+    <perch:if exists="paging">
+        <div class="paging">
+            Page <perch:blog id="current_page" /> of <perch:blog id="number_of_pages" />
+            <perch:if exists="not_first_page">
+                <a href="<perch:blog id="prev_url" encode="false" />">Previous</a>
+            </perch:if>
+            <perch:if exists="not_last_page">
+                <a href="<perch:blog id="next_url" encode="false" />">Next</a>
+            </perch:if>
+        </div>
+    </perch:if>
+</perch:after>

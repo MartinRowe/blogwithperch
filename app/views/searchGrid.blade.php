@@ -1,4 +1,3 @@
-@include('menuLayout')
 <div class=grid><!--
     
 --><!--
@@ -20,6 +19,7 @@
     
 --><div class="grid__item  six-twelfths">
 <!--        <p class=demo-block-red-white>Five Twelfths</p> -->
+ @yield('searchSection')
     </div><!--
 
     --><!--
@@ -29,7 +29,7 @@
  <div class=demo-block-gray-white> 
      <!--   <a href="{{ action('PostsController@mainindex') }}" >Sidebar</a> -->
       </div>
- @yield('searchSection')
+
  
         
     </div><!--

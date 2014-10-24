@@ -160,11 +160,6 @@ PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch
     	</nav>
 	</div>
 	
-	<footer class="layout-footer">
-		<div class="wrapper">
-		
-			<small>Copyright &copy; <?php echo date('Y'); ?></small>
-		</div>
-	</footer>
+	
 	<?php perch_get_javascript(); ?>
 @stop

@@ -30,11 +30,20 @@
      <!--   <a href="{{ action('PostsController@mainindex') }}" >Sidebar</a> -->
      <!-- @yield('BlogArchive') -->
      @yield('blogContent')
+     @yield('blogarchives') 
       </div>
 
         
     </div><!--
         
 -->  </div><!--
---></div>
+--></div><!--
+--><div class=grid><!--
+    
+--><div class="grid__item  twelve-twelfths">
+      <div class=demo-block-gray-white> 
+     @yield('myFooter')
+      </div>
+    </div>  
+    </div>
   
