@@ -18,6 +18,8 @@ Route::model('home', 'Home');
 Route::get('/', 'HomeController@home');
 //Route::get('/example', 'HomeController@example');
 Route::get('/search', 'HomeController@search');
+
+
 // Perch List Detail Example
 //Route::get('/listdetail', 'HomeController@listdetail');
 
@@ -26,6 +28,22 @@ Route::model('blog', 'Blog');
 Route::get('/blog', 'BlogController@blogindex');
 Route::get('/archive', 'BlogController@archive');
 Route::any('/post', 'BlogController@post');
+
+
+// Bind Perch Members route parameters for members page - what a hassle this has been.
+Route::model('members', 'Members');
+Route::any('/members/download', 'MembersController@download');
+Route::any('/members', 'MembersController@index');
+Route::any('members/logout', 'MembersController@logout');
+Route::any('/logout', 'MembersController@logout');
+Route::any('members/profile', 'MembersController@profile');
+Route::any('/profile', 'MembersController@profile');
+Route::any('/members/register', 'MembersController@register');
+//Route::any('/register', 'MembersController@register');
+Route::any('/members/reset', 'MembersController@reset');
+
+Route::any('/members/login', 'MembersController@register');
+Route::any('/members/register/login', 'MembersController@register');
 
 
 // Non Perch, only Laravel
