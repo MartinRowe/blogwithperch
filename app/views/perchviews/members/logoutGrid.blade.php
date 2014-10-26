@@ -5,32 +5,32 @@
     
  --><!--
 
---><div class="grid__item  two-twelfths">
+--><div class="grid__item  six-twelfths">
       <!--   <p class=demo-block-red-white>Six Twelfths</p> -->
       <div class=demo-block-gray-white> 
-
+ @yield('logoutStuff')
 
        
   <!--  {{ HTML::image('meSmile.jpg')}} -->
       </div>
-  <!--    @yield('content') -->
     </div><!--
 
 --><!--
     
---><div class="grid__item  six-twelfths">
+--><div class="grid__item  two-twelfths">
 <!--        <p class=demo-block-red-white>Five Twelfths</p> -->
-
+ 
     </div><!--
 
     --><!--
     
 --><div class="grid__item  four-twelfths">
     <!--    <p class=demo-block-red-white>One Twelfth</p> -->
- <div class=demo-block-gray-white> 
+ <div class=demo-block> 
      <!--   <a href="{{ action('PostsController@mainindex') }}" >Sidebar</a> -->
-      </div>
- @yield('faqContent')
+     <!-- @yield('BlogArchive') -->
+    </div>
+
         
     </div><!--
         
@@ -40,7 +40,7 @@
     
 --><div class="grid__item  twelve-twelfths">
       <div class=demo-block-gray-white> 
-
+  
       </div>
     </div>  
     </div>

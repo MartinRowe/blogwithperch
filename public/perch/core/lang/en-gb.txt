@@ -682,5 +682,6 @@
     "Order": "Order",
     "Local file": "Local file",
     "Roll back regions": "Roll back regions",
-    "Do not copy": "Do not copy"
+    "Do not copy": "Do not copy",
+    "%sPerch is out of date.%s You are running %s and the latest is %s. %sUpdate instructions%s": "%sPerch is out of date.%s You are running %s and the latest is %s. %sUpdate instructions%s"
 }

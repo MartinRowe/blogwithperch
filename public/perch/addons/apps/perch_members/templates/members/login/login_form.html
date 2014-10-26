@@ -4,7 +4,7 @@
 
 <perch:else:member />
 
-	<perch:form id="login" method="post" app="perch_members">
+	<perch:form id="login" method="post" app="perch_members" action="<perch:members id="postURL" />">
 		<fieldset>
 		   	<legend>Log in</legend>
 
@@ -27,7 +27,7 @@
 				<perch:input type="submit" id="submit" value="Log in" />
 				<perch:input type="hidden" id="r" />
 
-				<p>Forgotten your password? <a href="/members/reset.php">Reset it now</a>.</p>
+				<p>Forgotten your password? <a href="/members/reset">Reset it now</a>.</p>
 			</div>
 
 	    </fieldset>

@@ -1,5 +1,6 @@
-<?php 
-	include('../perch/runtime.php'); 
+<?php include('perch/runtime.php'); 
+
+PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch/app/views/perchviews/members/download.blade.php');
 
 	// config
 	$bucket_name = 'secure';
