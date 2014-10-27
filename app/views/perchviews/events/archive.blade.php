@@ -1,29 +1,13 @@
-<?php include('../perch/runtime.php'); ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
+<?php include('perch/runtime.php'); ?>
+@extends('perchviews/events/archiveGrid')
+<?php
+PerchSystem::set_page('/events/archive');
+//echo $Settings->get('perch_members_login_page')->settingValue();
+//echo $page = PerchSystem::get_page();
+?>
 
-	<title>Perch Events Example</title>
-	<?php perch_get_css(); ?>
-	<link rel="stylesheet" href="events.css" type="text/css" />
-	
-</head>
+@section('archiveStuff')
 
-<body>
-	<header class="layout-header">
-		<div class="wrapper">
-			<div class="company-name">Perch Events App - Company Name</div>
-			<img src="<?php perch_path('feathers/quill/img/logo.gif'); ?>" alt="Your Logo Here" class="logo"/>
-		</div>
-		<nav class="main-nav">
-			<?php perch_pages_navigation(array(
-					'levels'=>1
-				));
-			?>
-		</nav>
-	</header>
-	
 	<!--  change cols2-nav-right to cols2-nav-left if you want the sidebar on the left -->
 	<div class="wrapper cols2-nav-right">
 	
@@ -73,8 +57,7 @@
 
 
 	<?php perch_get_javascript(); ?>
-</body>
-</html>
+@stop
 
 
 

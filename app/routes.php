@@ -46,6 +46,23 @@ Route::any('/members/login', 'MembersController@register');
 Route::any('/members/register/login', 'MembersController@register');
 
 
+// Bind Perch Events route parameters for event page - what a hassle this has been.
+Route::model('events', 'Events');
+Route::get('/events', 'EventsController@eventsIndex');
+Route::get('/events/archive', 'EventsController@archive');
+Route::get('/basic-calendar', 'EventsController@basiccalendar');
+Route::get('/basic-listing', 'EventsController@basiclisting');
+Route::get('/events/event', 'EventsController@event');
+Route::get('/events-custom', 'EventsController@eventscustom');
+Route::get('/options-calendar', 'EventsController@optionscalendar');
+Route::get('/options-listing', 'EventsController@optionslisting');
+
+
+
+//Route::get('/archive', 'BlogController@archive');
+//Route::any('/post', 'BlogController@post');
+
+
 // Non Perch, only Laravel
 // Bind route parameters for blog page.
 Route::model('post', 'Post');
