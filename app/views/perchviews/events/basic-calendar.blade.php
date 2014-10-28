@@ -14,7 +14,7 @@ PerchSystem::set_page('/events/basic-calendar');
 
 	
 	<!--  change cols2-nav-right to cols2-nav-left if you want the sidebar on the left -->
-	<div class="wrapper cols2-nav-right">
+	<div class="wrapper cols8-nav-right">
 	
 		<div class="primary-content">
 		<h1>Example Calendar</h1>

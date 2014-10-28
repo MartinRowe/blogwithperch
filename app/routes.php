@@ -59,6 +59,41 @@ Route::get('/options-listing', 'EventsController@optionslisting');
 
 
 
+// Bind Perch Blog route parameters for blog page - what a hassle this has been.
+Route::model('gallery', 'Gallery');
+Route::get('/gallery', 'GalleryController@index');
+//Route::get('/gallery/exampleaAlbum', 'GalleryController@album');
+//Route::any('/post', 'GalleryController@post');
+
+// Bind Perch Blog route parameters for blog page - what a hassle this has been.
+Route::model('gallerya', 'Gallerya');
+Route::get('/example-a', 'GalleryaController@index');
+Route::any('/albuma', 'GalleryaController@albuma');
+Route::any('/image', 'GalleryaController@image');
+
+// Bind Perch Blog route parameters for blog page - what a hassle this has been.
+Route::model('galleryb', 'Galleryb');
+Route::get('/example-b', 'GallerybController@index');
+//Route::any('/example-b/album', 'GallerybController@album');
+Route::any('/image', 'GallerybController@image');
+
+// Bind Perch Blog route parameters for blog page - what a hassle this has been.
+Route::model('galleryc', 'Galleryc');
+Route::get('/example-c', 'GallerycController@index');
+Route::any('/albumc', 'GallerycController@albumc');
+
+
+// Bind Perch Blog route parameters for blog page - what a hassle this has been.
+Route::model('galleryd', 'Galleryd');
+Route::get('/example-d', 'GallerydController@index');
+Route::any('/albumd', 'GallerydController@albumd');
+
+// Bind Perch Blog route parameters for blog page - what a hassle this has been.
+Route::model('gallerye', 'Gallerye');
+Route::get('/example-e', 'GalleryeController@index');
+
+
+
 //Route::get('/archive', 'BlogController@archive');
 //Route::any('/post', 'BlogController@post');
 

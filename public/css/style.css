@@ -3569,6 +3569,489 @@ You could also have each section as a separate stylesheet, it is up to you. */
     margin-left: auto;
     max-width: 1200px; } }
 
+/* this stylesheet contains some example styling for the blog pages. For the full layout you will require the default Perch Quill Feather. Feel free to edit  */
+.date {
+  font-weight: bold;
+  padding: 0.5em 0 0 0; }
+
+.comments {
+  border-bottom: 1px dotted #DEE0E0; }
+
+.author h2 {
+  font-size: 107.7%;
+  margin-top: 0; }
+
+@media only screen and (min-width: 700px) {
+  .comments li {
+    overflow: auto; }
+  .comments img, .author img {
+    float: left;
+    margin-right: 2.85714%;
+    /* 20 / 700 */
+    margin-bottom: 20px;
+    width: 12.85714%;
+    /* 90 / 700 */ }
+  .comments .comment, .author .author {
+    float: right;
+    width: 83.57143%;
+    /* 585 / 700 */ }
+  .author:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0; } }
+
+ul.calendar-nav {
+  margin: 1.5em 0;
+  overflow: hidden;
+  padding-top: 0.8em; }
+
+ul.calendar-nav li {
+  list-style-type: none; }
+
+a.paging-prev {
+  padding-left: 7.14286%;
+  /* 20 / 280 */ }
+
+a.paging-next {
+  padding-right: 7.14286%;
+  /* 20 / 280 */ }
+
+ul.calendar-nav h2 {
+  margin-top: 1.1em; }
+
+ul.calendar-nav h2 a {
+  background: none;
+  padding-left: 0; }
+
+/* *** CALENDAR *** 
+all screen widths */
+table.calendar {
+  width: 100%; }
+
+table.calendar tbody {
+  border-top: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2; }
+
+table.calendar th {
+  display: table-cell;
+  width: 14.28571%;
+  /* 1/7 of width as there's always 7 days in the week */
+  font-weight: bold; }
+
+table.calendar th abbr {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase; }
+
+table.calendar td {
+  border: 1px solid #e2e2e2;
+  text-align: left;
+  vertical-align: top;
+  width: 14.28571%;
+  /* 1/7 of width as there's always 7 days in the week */ }
+
+table.calendar td.notinmonth {
+  background: #e2e2e2; }
+
+table.calendar .day {
+  display: block; }
+
+table.calendar .vevent {
+  border-top: 1px dotted #dee0e0;
+  display: block;
+  padding: 0.5em 0; }
+
+table.calendar a.vevent abbr {
+  font-weight: bold;
+  margin-right: 0.5em; }
+
+table.calendar .has-event {
+  /* just highlight days which have events */
+  background: #00348e;
+  color: #fff; }
+
+table.calendar .has-event .eventwrap {
+  padding: 0.5em; }
+
+table.calendar .has-event a, table.calendar .has-event span {
+  color: #fff; }
+
+/* on narrow widths we hide the summary */
+table.calendar tr td .vevent span.summary {
+  display: none; }
+
+/* *** LISTING VIEW *** */
+ul.calendar {
+  border-top: 1px solid #dee0e0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none; }
+
+ul.calendar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+ul.calendar > li {
+  border-bottom: 1px solid #dee0e0;
+  padding-bottom: 0.8em; }
+
+ul.calendar li h3 {
+  background: #f0f0f0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.3em 0.8em; }
+
+ul.calendar li .vevent {
+  padding: 0.8em; }
+
+ul.calendar .vevent:nth-of-type(2n) {
+  border-top: 1px dotted #dee0e0; }
+
+ul.calendar .vevent h4 {
+  margin: 0; }
+
+ul.calendar .vevent h4 a {
+  font-weight: normal; }
+
+@media only screen and (min-width: 460px) {
+  ul.calendar-nav li {
+    float: left;
+    margin-right: 4.34783%;
+    /* 20 / 460 */
+    width: 30.43478%;
+    /* 140 / 460 */ }
+  ul.calendar-nav li h2 {
+    margin-top: 0;
+    text-align: center; }
+  ul.calendar-nav li:nth-child(3) {
+    margin-right: 0;
+    text-align: right; }
+  ul.calendar-nav li a {
+    padding-left: 14.28571%;
+    /* 20 / 140 */ }
+  ul.calendar-nav li a#next_month {
+    padding-right: 14.28571%;
+    /* 20 / 140 */
+    padding-left: 0; }
+  table.calendar td {
+    height: 40px; }
+  table.calendar td a.vevent {
+    border-top: 1px dotted #e2e2e2; }
+  table.calendar tr td .vevent span.summary {
+    display: block; } }
+
+@media only screen and (min-width: 700px) {
+  table.calendar thead {
+    /* Reveal table */
+    display: table-header-group; }
+  table.calendar tbody {
+    /* Reveal table */
+    display: table-footer-group; }
+  table.calendar:after {
+    content: "";
+    width: 100%; }
+  table.calendar td {
+    height: 100px; } }
+
+/* this stylesheet contains some example styling for comments. For the full layout you will require the default Perch Quill Feather. Feel free to edit  */
+.date {
+  font-weight: bold;
+  padding: 0.5em 0 0 0; }
+
+.comments {
+  border-bottom: 1px dotted #DEE0E0; }
+
+@media only screen and (min-width: 700px) {
+  .comments li {
+    overflow: auto; }
+  .comments img {
+    float: left;
+    margin-right: 2.85714%;
+    /* 20 / 700 */
+    margin-bottom: 20px;
+    width: 12.85714%;
+    /* 90 / 700 */ }
+  .comments .comment {
+    float: right;
+    width: 83.57143%;
+    /* 585 / 700 */ } }
+
+/* this stylesheet contains example styling for the gallery app. Feel free to edit or include this css in your existing stylesheet */
+.primary-content .glist, .sidebar .glist, .glist {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* for containers, act as a clearing device */
+.cont {
+  overflow: auto; }
+
+.allalbums > li {
+  clear: left; }
+
+.imagelisting li {
+  float: left;
+  width: 100px;
+  margin: 0 10px 10px 0; }
+
+.slideshow-nav li {
+  float: left;
+  padding: 0 0 0 4.5px; }
+
+.slideshow-nav li:first-child {
+  padding-left: 0; }
+
+.slideshow-nav li img {
+  width: 76px;
+  height: 76px;
+  opacity: 0.5; }
+
+.slideshow-nav li.activeSlide img, .slideshow-nav li a:hover img {
+  opacity: 1; }
+
+.albumdisplay li {
+  float: left;
+  width: 120px;
+  margin: 0 20px 20px 0; }
+
+.albumdisplay li img:hover {
+  border: 2px solid #000; }
+
+.albumdisplay li img {
+  display: block;
+  border: 2px solid #ccc; }
+
+.pager {
+  margin: 1.5em 0;
+  overflow: hidden;
+  padding-top: 0.8em; }
+
+.pager li {
+  float: left;
+  width: 10em; }
+
+.pager li.paging-label {
+  float: none;
+  width: 100%;
+  padding: 0 0 1em 0; }
+
+.pager a.paging-next {
+  text-align: right; }
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden; }
+
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left; }
+
+#cboxContent {
+  position: relative; }
+
+#cboxLoadedContent {
+  overflow: auto; }
+
+#cboxTitle {
+  margin: 0; }
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  cursor: pointer; }
+
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block; }
+
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0; }
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay {
+  background: url(images/overlay.png) repeat 0 0; }
+
+#cboxTopLeft {
+  width: 21px;
+  height: 21px;
+  background: url(images/controls.png) no-repeat -101px 0; }
+
+#cboxTopRight {
+  width: 21px;
+  height: 21px;
+  background: url(images/controls.png) no-repeat -130px 0; }
+
+#cboxBottomLeft {
+  width: 21px;
+  height: 21px;
+  background: url(images/controls.png) no-repeat -101px -29px; }
+
+#cboxBottomRight {
+  width: 21px;
+  height: 21px;
+  background: url(images/controls.png) no-repeat -130px -29px; }
+
+#cboxMiddleLeft {
+  width: 21px;
+  background: url(images/controls.png) left top repeat-y; }
+
+#cboxMiddleRight {
+  width: 21px;
+  background: url(images/controls.png) right top repeat-y; }
+
+#cboxTopCenter {
+  height: 21px;
+  background: url(images/border.png) 0 0 repeat-x; }
+
+#cboxBottomCenter {
+  height: 21px;
+  background: url(images/border.png) 0 -29px repeat-x; }
+
+#cboxContent {
+  background: #fff;
+  overflow: hidden; }
+
+.cboxIframe {
+  background: #fff; }
+
+#cboxError {
+  padding: 50px;
+  border: 1px solid #ccc; }
+
+#cboxLoadedContent {
+  margin-bottom: 28px; }
+
+#cboxTitle {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #949494; }
+
+#cboxCurrent {
+  position: absolute;
+  bottom: 4px;
+  left: 58px;
+  color: #949494; }
+
+#cboxSlideshow {
+  position: absolute;
+  bottom: 4px;
+  right: 30px;
+  color: #0092ef; }
+
+#cboxPrevious {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(images/controls.png) no-repeat -75px 0;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+#cboxPrevious:hover {
+  background-position: -75px -25px; }
+
+#cboxNext {
+  position: absolute;
+  bottom: 0;
+  left: 27px;
+  background: url(images/controls.png) no-repeat -50px 0;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+#cboxNext:hover {
+  background-position: -50px -25px; }
+
+#cboxLoadingOverlay {
+  background: url(images/loading_background.png) no-repeat center center; }
+
+#cboxLoadingGraphic {
+  background: url(images/loading.gif) no-repeat center center; }
+
+#cboxClose {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(images/controls.png) no-repeat -25px 0;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+#cboxClose:hover {
+  background-position: -25px -25px; }
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft, .cboxIE #cboxTopCenter, .cboxIE #cboxTopRight, .cboxIE #cboxBottomLeft, .cboxIE #cboxBottomCenter, .cboxIE #cboxBottomRight, .cboxIE #cboxMiddleLeft, .cboxIE #cboxMiddleRight {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); }
+
+/*
+  The following provides PNG transparency support for IE6
+  Feel free to remove this and the /ie6/ directory if you have dropped IE6 support.
+*/
+.cboxIE6 #cboxTopLeft {
+  background: url(images/ie6/borderTopLeft.png); }
+
+.cboxIE6 #cboxTopCenter {
+  background: url(images/ie6/borderTopCenter.png); }
+
+.cboxIE6 #cboxTopRight {
+  background: url(images/ie6/borderTopRight.png); }
+
+.cboxIE6 #cboxBottomLeft {
+  background: url(images/ie6/borderBottomLeft.png); }
+
+.cboxIE6 #cboxBottomCenter {
+  background: url(images/ie6/borderBottomCenter.png); }
+
+.cboxIE6 #cboxBottomRight {
+  background: url(images/ie6/borderBottomRight.png); }
+
+.cboxIE6 #cboxMiddleLeft {
+  background: url(images/ie6/borderMiddleLeft.png); }
+
+.cboxIE6 #cboxMiddleRight {
+  background: url(images/ie6/borderMiddleRight.png); }
+
+.cboxIE6 #cboxTopLeft, .cboxIE6 #cboxTopCenter, .cboxIE6 #cboxTopRight, .cboxIE6 #cboxBottomLeft, .cboxIE6 #cboxBottomCenter, .cboxIE6 #cboxBottomRight, .cboxIE6 #cboxMiddleLeft, .cboxIE6 #cboxMiddleRight {
+  _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')"); }
+
 body {
   /* Matisse Blue #1A62A3; */
   /*   background: #666;  */
