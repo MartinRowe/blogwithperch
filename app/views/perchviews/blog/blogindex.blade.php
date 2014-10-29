@@ -1,35 +1,33 @@
 <?php include('perch/runtime.php'); ?>
 @extends('perchviews/blog/blogGrid')
+
 <?php
-PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch/app/views/perchviews/blog/blogindex.blade.php');
+	PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch/app/views/perchviews/blog/blogindex.blade.php');
 ?>
+
 
 @section('blogRecentPosts')
 
 	<?php perch_content('BlogStuff'); ?>
-			<!-- this is an example blog homepage showing a simple call to perch_blog_recent_posts()
-			
-			Posts are displayed using the templates stored in perch/apps/perch_blog/templates/blog
-			you can edit these as you wish, making sure that the check paths -->
 
+			<!-- Blog homepage - simple call to perch_blog_recent_posts() -->
 		    <?php 
 		        perch_blog_recent_posts(10);
 		    ?>
-	    
-		    
-	 <a href="{{ action('BlogController@archive') }}" >More Posts</a>
-		  <!--  <p><a href="archive.php">More posts</a></p> -->
 @stop
 
+
+
 @section('blogContent')
+
 	<?php perch_content('BlogIntro'); ?>
+
 @stop
+
+
+
 @section('blogarchives')
 	
-	<!--  change cols2-nav-right to cols2-nav-left if you want the sidebar on the left -->
-	<div class="wrapper cols4-nav-left">
-	
-		<div class="primary-content">
 	   
 		    <?php 	        
 		        // defaults for all modes
@@ -160,7 +158,7 @@ PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch
 		      	}
 
 		    ?>
-	    </div>
+
 		<nav class="sidebar">
 		    <h2>Filter archive</h2>
 		    <!--  By category listing -->
@@ -176,7 +174,6 @@ PerchSystem::set_page('/Users/martinrowe/Documents/Sites/homestead/blogwithperch
 		    <title><?php perch_blog_post_field(perch_get('s'), 'postTitle'); ?></title>
 
     	</nav>
-	</div>
 	
 	
 	<?php perch_get_javascript(); ?>

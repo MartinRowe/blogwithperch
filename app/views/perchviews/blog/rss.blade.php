@@ -14,7 +14,9 @@
         <title>Perch Blog Example</title>
         <link><?php echo PerchUtil::html($domain); ?>/blog/</link>
         <description>My awesome website.</description>
-        <atom:link href="<?php echo PerchUtil::html($domain); ?>/blog/rss.php" rel="self" type="application/rss+xml" />
+        
+        <!-- changed rss.php tp rss below -->
+        <atom:link href="<?php echo PerchUtil::html($domain); ?>/blog/rss" rel="self" type="application/rss+xml" />
         <?php
             perch_blog_custom(array(
                 'template'=>'rss_post.html',

@@ -1,17 +1,13 @@
 <?php include('perch/runtime.php'); ?>
 @extends('perchviews/events/archiveGrid')
+
 <?php
-PerchSystem::set_page('/events/archive');
-//echo $Settings->get('perch_members_login_page')->settingValue();
-//echo $page = PerchSystem::get_page();
+	PerchSystem::set_page('/events/archive');
+	//echo $page = PerchSystem::get_page();
 ?>
 
 @section('archiveStuff')
 
-	<!--  change cols2-nav-right to cols2-nav-left if you want the sidebar on the left -->
-	<div class="wrapper cols2-nav-right">
-	
-		<div class="primary-content">
 			<?php
 				perch_events_category(perch_get('cat'));
 			?>
@@ -45,7 +41,6 @@ PerchSystem::set_page('/events/archive');
 					'template'   => 'listing/custom-listing-day.html'
 	            ));
 			?>
-		</div>
 
 		<nav class="sidebar">
 		    <!--  By category listing -->
@@ -53,9 +48,6 @@ PerchSystem::set_page('/events/archive');
     	</nav>
 		
 		
-	</div>
-
-
 	<?php perch_get_javascript(); ?>
 @stop
 
