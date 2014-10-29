@@ -1,50 +1,47 @@
 <?php include('perch/runtime.php'); ?>
 @extends('perchviews/gallery/example-a/examplea_indexGrid')
+
 <?php
-PerchSystem::set_page('/gallery/example-a/index');
-//echo $page = PerchSystem::get_page();
+	PerchSystem::set_page('/gallery/example-a/index');
+	//echo $page = PerchSystem::get_page();
 ?>
 
 <head>
     <meta charset="utf-8" />
-	<title><?php perch_gallery_album_field(perch_get('s'), 'albumTitle'); ?> - Perch Gallery Example A</title>
+	<title><?php perch_gallery_album_field(perch_get('s'), 'albumTitle'); ?> - Gallery Example A</title>
 	<?php perch_get_css(); ?>
 	<link rel="stylesheet" href="{{asset('css/gallery.css')}}">
 	<link rel="stylesheet" href="{{asset('css/colorbox.css')}}">
 </head>
 
+
 @section('galleryIndexa')
 	
-	<!--  change cols2-nav-right to cols2-nav-left if you want the sidebar on the left -->
-	<div class="wrapper cols2-nav-right">
+    <h2>Example A: gallery</h2>
+
+    <p>A simple gallery listing. Albums are listed in the navigation and also below using the
+    	optional ability to display a thumbnail for the album. 
+    Clicking on any album takes you to the page for that album where thumbnails are displayed.
+    Click a thumbnail to view a larger image.</p>
+    
+    <ul class="glist albumdisplay">
+    <?php 
+        perch_gallery_albums(array(
+            'template'=>'a_album-image.html',
+            'image'=>true
+        )); 
+    ?>
+    </ul>
+@stop
+
+@section('galleryIndexaListing')
 	
-		<div class="primary-content">
-		    <h1>Example A: gallery</h1>
-		
-		    <p>This demonstrates a simple gallery listing. Albums are listed in the navigation and also below using the optional ability to display a thumbnail for the album. 
-		    Clicking on any album takes you to the page for that album where thumbnails are displayed. Click a thumbnail to view a larger image.</p>
-		    <ul class="glist albumdisplay">
-		    <?php 
-		        perch_gallery_albums(array(
-		            'template'=>'a_album-image.html',
-		            'image'=>true
-		        )); 
-		    ?>
-		    </ul>
-		
-	    	
-		
+	<h2>Albums</h2>
+    <ul class="glist albums">
+    	<?php perch_gallery_albums(); ?>
+    </ul>
 
-		</div>
-		<nav class="sidebar">
-			<h2>Albums</h2>
-		    <ul class="glist albums">
-		    	<?php perch_gallery_albums(); ?>
-		    </ul>
-
-		</nav>
-		
-	</div>
 
 	<?php perch_get_javascript(); ?>
+
 @stop

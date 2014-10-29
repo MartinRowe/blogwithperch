@@ -7,4 +7,5 @@
 		'perch_events',
 		'perch_gallery',
 		'perch_comments',
+		'perch_forms',
 	);

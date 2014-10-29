@@ -1,39 +1,41 @@
+@include('menuLayout')
 <div class=grid><!--
     
 --><!--
     
  --><!--
 
---><div class="grid__item  two-twelfths">
-      <!--   <p class=demo-block-red-white>Six Twelfths</p> -->
-      <div class=demo-block-gray-white> 
+--><div class="grid__item  six-twelfths">
 
-
+        @yield('searchPage')
        
-  <!--  {{ HTML::image('meSmile.jpg')}} -->
-      </div>
-  <!--    @yield('content') -->
     </div><!--
 
---><!--
-    
 --><div class="grid__item  six-twelfths">
-<!--        <p class=demo-block-red-white>Five Twelfths</p> -->
- @yield('searchSection')
+
+        @yield('searchPageSearchSection')
+    
+    </div><!--
+
+    
+
+    --></div><!--
+    
+
+
+
+
+--><div class=grid><!--
+    
+--><div class="grid__item  twelve-twelfths">
+
+    @yield('myFooter')  
+    
     </div><!--
 
     --><!--
     
---><div class="grid__item  four-twelfths">
-    <!--    <p class=demo-block-red-white>One Twelfth</p> -->
- <div class=demo-block-gray-white> 
-     <!--   <a href="{{ action('PostsController@mainindex') }}" >Sidebar</a> -->
-      </div>
-
- 
+--><!--
         
-    </div><!--
-        
--->  </div><!--
 --></div>
   

@@ -7,21 +7,17 @@
 | Application Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
+| Register all of the routes for the application.
 |
 */
 
 // Bind Home route parameters for home page.
 Route::model('home', 'Home');
 Route::get('/', 'HomeController@home');
-//Route::get('/example', 'HomeController@example');
 Route::get('/search', 'HomeController@search');
-
-
 // Perch List Detail Example
 //Route::get('/listdetail', 'HomeController@listdetail');
+
 
 // Bind Perch Blog route parameters for blog page - what a hassle this has been.
 Route::model('blog', 'Blog');
@@ -94,8 +90,20 @@ Route::get('/example-e', 'GalleryeController@index');
 
 
 
-//Route::get('/archive', 'BlogController@archive');
-//Route::any('/post', 'BlogController@post');
+// Bind route parameters for FAQ page.
+Route::model('faq', 'FAQ');
+Route::get('/faq', 'FAQController@faq');
+
+
+
+// Bind route parameters for about page.
+Route::model('about', 'About');
+Route::get('/about', 'AboutController@about');
+
+
+
+
+
 
 
 // Non Perch, only Laravel
@@ -115,10 +123,4 @@ Route::post('/blogg/edit', 'PostsController@handleEdit');
 Route::post('/blogg/delete', 'PostsController@handleDelete');
 
 
-// Bind route parameters for FAQ page.
-Route::model('faq', 'FAQ');
-Route::get('/faq', 'FAQController@faq');
 
-// Bind route parameters for about page.
-Route::model('about', 'About');
-Route::get('/about', 'AboutController@about');

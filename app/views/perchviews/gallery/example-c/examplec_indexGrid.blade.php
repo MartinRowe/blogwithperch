@@ -6,43 +6,33 @@
  --><!--
 
 --><div class="grid__item  eight-twelfths">
-      <!--   <p class=demo-block-red-white>Six Twelfths</p> -->
-      <div class=demo-block-gray-white> 
- @yield('galleryIndexc')
 
-       
-  <!--  {{ HTML::image('meSmile.jpg')}} -->
-      </div>
+      @yield('galleryIndexc')
+       @yield('galleryIndexcAlbumList') 
     </div><!--
 
 --><!--
     
---><div class="grid__item  two-twelfths">
-<!--        <p class=demo-block-red-white>Five Twelfths</p> -->
- 
-    </div><!--
+--><div class="grid__item  four-twelfths">
 
-    --><!--
+      
     
---><div class="grid__item  two-twelfths">
-    <!--    <p class=demo-block-red-white>One Twelfth</p> -->
- <div class=demo-block> 
-     <!--   <a href="{{ action('PostsController@mainindex') }}" >Sidebar</a> -->
-     <!-- @yield('BlogArchive') -->
-     
-      </div>
-
-        
     </div><!--
-        
--->  </div><!--
---></div><!--
+
+--><!--
+    
+--><!--
+
+--></div><!-- end grid
+
+
 --><div class=grid><!--
     
 --><div class="grid__item  twelve-twelfths">
-      <div class=demo-block-gray-white> 
+
+       @yield('myFooter')
+
+    </div><!--
     
-      </div>
-    </div>  
-    </div>
+--></div>
   

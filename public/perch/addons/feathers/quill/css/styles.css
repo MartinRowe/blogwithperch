@@ -382,7 +382,7 @@ The following rules only effect content inside the main content area of the page
 
 /* *** LAYOUT-FOOTER *** */
 .layout-footer {
-    background: #f0f0f0;
+  /*  background: #f0f0f0; */
     border-top: 1px solid #dee0e0;
     margin-top: 40px;
     padding: 1.5em 0 1.5em 0;

@@ -8,9 +8,6 @@ PerchSystem::set_page('/members');
 
 @section('membersStuff')
 	
-	<div class="wrapper cols2-nav-right">
-	
-		<div class="primary-content">
 
 		<?php 
 			if (perch_member_logged_in()) {
@@ -21,23 +18,21 @@ PerchSystem::set_page('/members');
 			}
 		?>
 
-		</div>
-		
-		<nav class="sidebar">
-			<?php
-				if (perch_member_logged_in()) {
-			?>	
-				<ul>
-					<li><a href="profile">Edit profile</a></li>
-					<li><a href="logout">Log out</a></li>
-				</ul>
 
-			<?php
-				}else{
-					perch_members_login_form();	
-				}
-			?>
-		</nav>	
-	</div>
+		<?php
+			if (perch_member_logged_in()) {
+		?>	
+			<ul>
+				<li><a href="profile">Edit profile</a></li>
+				<li><a href="logout">Log out</a></li>
+			</ul>
+
+		<?php
+			}else{
+				perch_members_login_form();	
+			}
+		?>
+			
+
     <?php perch_get_javascript(); ?>
 @stop
