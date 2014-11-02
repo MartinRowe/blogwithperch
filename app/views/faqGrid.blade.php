@@ -12,7 +12,7 @@
 --><!--
     
 --><div class="grid__item  six-twelfths">
-
+@yield('FAQ')
     </div><!--
 
     --><!--

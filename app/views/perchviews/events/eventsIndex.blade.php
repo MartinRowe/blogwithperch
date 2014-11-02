@@ -23,3 +23,12 @@
 	<?php perch_get_javascript(); ?>
 
 @stop
+
+@section('myNavStacked')
+ <ul class="nav  nav--stacked">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+@stop

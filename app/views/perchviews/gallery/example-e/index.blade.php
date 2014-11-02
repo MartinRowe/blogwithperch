@@ -20,16 +20,16 @@
     
     <?php  
         $opts = array(
-            'count'=>5,
-            'paginate'=>true
+          // 'page-link-style'=> 'all',
+          //  'pagination-var' => 'wtf',
+            'count'=>3,
+            'paginate'=>true,
+            'page-links'=>true            
         );
-    
-    	//    perch_gallery_images($opts);
-    	perch_gallery_images(array(
-    	'template' => 'e_list_image.html',
-		)); 
+    	    
+            perch_gallery_images($opts);
     ?>
-
+ 
 
 	<?php perch_get_javascript(); ?>
 @stop

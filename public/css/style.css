@@ -749,7 +749,7 @@ label, input, textarea, button, select, option {
  * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
  * and over in your markup.
  */
-.cf:after, .nav:after, .matrix:after, .multi-list:after, .stat-group:after {
+.cf:after, .nav:after, .media:after, .matrix:after, .multi-list:after, .stat-group:after {
   content: "";
   display: table;
   clear: both; }
@@ -1782,6 +1782,108 @@ html.flexbox {
   content: "\00A0" "\00BB"; }
 
 /*------------------------------------*\
+    $BREADCRUMB
+\*------------------------------------*/
+/**
+ * Simple breadcrumb styling to apply to (ordered) lists. Extends `.nav`, e.g.:
+ *
+   <ol class="nav  breadcrumb">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>The Board</a></li>
+       <li class=current><a href=#>Directors</a></li>
+   </ol>
+ *
+ * Demo: jsfiddle.net/inuitcss/rkAY9
+ *
+ */
+.breadcrumb > li + li:before {
+  content: "\00BB" "\00A0"; }
+
+/**
+ * For denoting a path-like structure, GitHub style, e.g.:
+ *
+   <ol class="nav  breadcrumb--path">
+       <li class=breadcrumb__root><a href=#>inuit.css</a></li>
+       <li><a href=#>inuit.css</a></li>
+       <li><a href=#>partials</a></li>
+       <li class=current><a href=#>objects</a></li>
+   </ol>
+ *
+ */
+.breadcrumb--path > li + li:before {
+  content: "\002F" "\00A0"; }
+
+/**
+ * Assign a delimiter on the fly through a data attribute, e.g.:
+ *
+   <ol class="nav  breadcrumb">
+       <li><a href=#>Home</a></li>
+       <li data-breadcrumb="|"><a href=#>About</a></li>
+       <li data-breadcrumb="|"><a href=#>The Board</a></li>
+       <li data-breadcrumb="|" class=current><a href=#>Directors</a></li>
+   </ol>
+ *
+ */
+.breadcrumb > li + li[data-breadcrumb]:before {
+  content: attr(data-breadcrumb) "\00A0"; }
+
+/**
+ * Denote the root of the tree.
+ */
+.breadcrumb__root {
+  font-weight: bold; }
+
+/*------------------------------------*\
+    $MEDIA
+\*------------------------------------*/
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ * E.g.:
+ *
+   <div class=media>
+       <img src=http://placekitten.com/200/300 alt="" class=media__img>
+       <p class=media__body>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   </div>
+ *
+ * Demo: jsfiddle.net/inuitcss/cf4Qs
+ *
+ */
+.media {
+  display: block; }
+
+.media__img {
+  float: left;
+  margin-right: 24px; }
+
+/**
+     * Reversed image location (right instead of left).
+     */
+.media__img--rev {
+  float: right;
+  margin-left: 24px; }
+
+.media__img img, .media__img--rev img {
+  display: block; }
+
+.media__body {
+  overflow: hidden; }
+
+.media__body, .media__body > :last-child {
+  margin-bottom: 0; }
+
+/**
+     * `.img`s in `.islet`s need an appropriately sized margin.
+     */
+.islet .media__img {
+  margin-right: 12px; }
+
+.islet .media__img--rev {
+  margin-left: 12px; }
+
+/*------------------------------------*\
     $MARGINALIA
 \*------------------------------------*/
 /**
@@ -1959,6 +2061,60 @@ html.flexbox {
   text-align: left;
   float: left;
   clear: left; }
+
+/*------------------------------------*\
+    $FLYOUT
+\*------------------------------------*/
+/**
+ * Flyouts are pieces of content that fly out of a parent when said parent is
+ * hovered. They typically appear bottom-left of the parent.
+ *
+   <div class=flyout>
+       Foo
+       <div class=flyout__content>
+           <h1>Lorem</h1>
+           <p>Ipsum</p>
+       </div>
+   </div>
+ *
+ * Extend these objects in your theme stylesheet.
+ *
+ * Demo: jsfiddle.net/inuitcss/B52HG
+ *
+ */
+.flyout, .flyout--alt {
+  position: relative;
+  overflow: hidden; }
+
+.flyout__content {
+  /**
+         * Position the flyouts off-screen. This is typically better than
+         * `display:none;`.
+         */
+  position: absolute;
+  top: 100%;
+  left: -99999px; }
+
+/**
+     * Bring the flyouts into view when you hover their parents.
+     * Two different types of flyout; ‘regular’ (`.flyout`) and ‘alternative’
+     * (`.flyout--alt`).
+     */
+.flyout:hover, .flyout--alt:hover {
+  overflow: visible; }
+
+/**
+     * Regular flyouts sit all the way from the top, flush left.
+     */
+.flyout:hover > .flyout__content {
+  left: 0; }
+
+/**
+     * Alternative flyouts sit all the way from the left, flush top.
+     */
+.flyout--alt:hover > .flyout__content {
+  top: 0;
+  left: 100%; }
 
 /*------------------------------------*\
     $BEAUTONS.CSS
@@ -2259,6 +2415,63 @@ html.flexbox {
   -o-order: 1;
   order: 1;
   -ms-flex-order: 1; }
+
+/*------------------------------------*\
+    $GREYBOX
+\*------------------------------------*/
+/**
+ * Quickly throw together greybox wireframes. Use in conjunction with other
+ * inuit.css objects to create simple greybox prototypes, e.g.:
+ *
+   <div class="island  greybox  greybox--medium">Header</div>
+
+   <ul class="nav  nav--fit  nav--block  greybox">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * The beauty of combining the greyboxing with inuit.css objects is that any
+ * prototyping can quickly be converted into/used as production code.
+ *
+ * For a more complete prototyping framework, consider Adam Whitcroft’s Proto:
+ * adamwhitcroft.com/proto
+ *
+ * Demo: jsfiddle.net/inuitcss/qCXfh/
+ *
+ */
+.greybox, .graybox {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff; }
+
+.greybox a, .graybox a {
+  color: #fff;
+  text-decoration: underline; }
+
+/**
+ * All greyboxes will occupy 100% of their parent’s width, but to alter their
+ * heights we apply incrementally larger line-heights:
+ */
+.greybox--small, .graybox--small {
+  line-height: 48px; }
+
+.greybox--medium, .graybox--medium {
+  line-height: 96px; }
+
+.greybox--large, .graybox--large {
+  line-height: 192px; }
+
+.greybox--huge, .graybox--huge {
+  line-height: 384px; }
+
+.greybox--gigantic, .graybox--gigantic {
+  line-height: 768px; }
 
 /**
  * Style trumps; helper and brand classes

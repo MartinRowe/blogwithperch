@@ -19,3 +19,21 @@
         </div>
     </perch:if>
 </perch:after>
+
+
+<perch:after>
+<perch:template path="pagination/default.html" rescope="parent" />
+</perch:after>
+
+
+<perch:if exists="paging">
+  <ul class="pager cf">
+    <perch:if exists="not_first_page">
+      <li class="prev"><a href="<perch:content id="prev_url" type="hidden" encode="false" />">Previous</a></li>
+    </perch:if>
+    <perch:content id="page_links" encode="false" />
+    <perch:if exists="not_last_page">
+      <li class="next"><a href="<perch:content id="next_url" type="hidden" encode="false" />">Next</a></li>
+    </perch:if>
+  </ul>
+</perch:if>

@@ -84,24 +84,20 @@ Route::model('galleryd', 'Galleryd');
 Route::get('/example-d', 'GallerydController@index');
 Route::any('/albumd', 'GallerydController@albumd');
 
-// Bind Perch Blog route parameters for blog page - what a hassle this has been.
+// Bind Perch Gallerye route parameters for blog page - what a hassle this has been.
 Route::model('gallerye', 'Gallerye');
-Route::get('/example-e', 'GalleryeController@index');
-
+Route::any('/example-e', 'GalleryeController@index');
 
 
 // Bind route parameters for FAQ page.
 Route::model('faq', 'FAQ');
-Route::get('/faq', 'FAQController@faq');
+Route::any('/faq', 'FAQController@faq');
 
 
 
 // Bind route parameters for about page.
 Route::model('about', 'About');
 Route::get('/about', 'AboutController@about');
-
-
-
 
 
 

@@ -14,3 +14,24 @@
 	<?php perch_content('FaqIntro'); ?>
 
 @stop
+
+
+@section('FAQ')
+
+
+<ul class="questions">
+<?php
+  perch_content_custom('FAQ', array(
+    'template'=>'faq_question.html',
+    'page'=>'/faq.php'
+  ));
+?>
+</ul>
+
+
+	<ul class="faq">
+  <?php perch_content('FAQ'); ?>
+</ul>
+
+
+@stop

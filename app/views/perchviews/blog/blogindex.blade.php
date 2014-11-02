@@ -27,6 +27,8 @@
 
 
 @section('blogarchives')
+
+<?php perch_content('BlogArchives'); ?>
 	
 	   
 		    <?php 	        
@@ -38,6 +40,9 @@
 
 		        // Have we displayed any posts yet?
 		        $posts_displayed = false;
+
+		        
+
 
 		        /* 
 		        	perch_get() is used to get options from the URL.
@@ -158,6 +163,9 @@
 		      	}
 
 		    ?>
+
+
+
 
 		<nav class="sidebar">
 		    <h2>Filter archive</h2>

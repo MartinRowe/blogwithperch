@@ -6,7 +6,7 @@
  --><!--
 
 --><div class="grid__item  two-twelfths">
-  
+  <!-- @yield('myNavStacked') -->
     </div><!--
 
 --><!--
