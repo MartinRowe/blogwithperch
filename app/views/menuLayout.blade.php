@@ -21,11 +21,12 @@
    <li><a href="{{ URL::to('events') }}" class="greybox">Events</a></li>
    <li><a href="{{ URL::to('gallery') }}" class="greybox">Gallery</a></li>
    <li><a href="{{ URL::to('faq') }}" class="greybox">FAQ</a></li>
-   <li><a href="{{ URL::to('about') }}" class="greybox">About</a></li>
-   <li><a href="{{ URL::to('search') }}" class="greybox"></a></li>
-   <li><a href="{{ URL::to('search') }}" <button class="btn">Search</button></a></li>
+   <li><a href="{{ URL::to('about') }}"  class="greybox">About</a></li>
+   <li><a href="{{ URL::to('listdetail') }}" class="greybox">ListDetail</a></li>
+   <li><a href="{{ URL::to('search') }}" class="greybox">Search</a></li>
+ <!--  <li><a href="{{ URL::to('search') }}" <button class="btn">Search</button></a></li> -->
 <!--   <button class="btn">Search</button> -->
-<!--   <li><a href="{{ URL::to('listdetail') }}" class="greybox">ListDetail</a></li> -->
+
 <!--       <li><a href="{{ URL::to('blogg') }}" class="greybox">Blogg</a></li> -->
 </ul>
 
