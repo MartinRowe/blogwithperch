@@ -25,14 +25,45 @@
      if (perch_get('s')) {
   // Detail mode
 
+
 // Detail mode
- perch_content_custom('Products', array(
+$result = perch_content_custom('Products', array(
       'template' => 'product_detail.html',
       'filter' => 'slug',
       'match' => 'eq',
       'value' => perch_get('s'),
       'count' => 1,
+      'skip-template' => true,
+      'return-html' => true,
  )); 
+
+ echo $result['html'];
+
+
+perch_content_custom('Products', array(
+    'template'   => 'product_prevnext.html',
+    'filter'     => '_order',
+    'match'      => 'gt',
+    'value'      => $result[0]['_sortvalue'],
+    'sort'       => '_order',
+    'sort-order' => 'ASC',
+    'count'      => 1,
+));
+
+
+PerchSystem::set_var('is_prev', true);
+
+perch_content_custom('Products', array(
+    'template'   => 'product_prevnext.html',
+    'filter'     => '_order',
+    'match'      => 'lt',
+    'value'      => $result[0]['_sortvalue'],
+    'sort'       => '_order',
+    'sort-order' => 'DESC',
+    'count'      => 1,
+));
+
+
 
      } else {
 // List mode
