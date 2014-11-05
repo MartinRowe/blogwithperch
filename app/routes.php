@@ -99,6 +99,10 @@ Route::any('/faq', 'FAQController@faq');
 Route::model('about', 'About');
 Route::get('/about', 'AboutController@about');
 
+// Bind route parameters for about page.
+Route::model('contact', 'Contact');
+Route::any('/contact', 'ContactController@index');
+
 
 
 
